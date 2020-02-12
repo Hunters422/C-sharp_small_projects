@@ -34,14 +34,12 @@ namespace Assignment_pg101
             if (numTickets < 3 && DUIanswer ==true && currentAge > 15)
             {
                 Console.WriteLine("Congrats! We can insure you");
-                Console.ReadLine();
-                
             }
            else
             {
                 Console.WriteLine("Sorry, we cannot insure you.");
-                Console.ReadLine();
             }
+            Console.ReadLine();
 
         }
     }
