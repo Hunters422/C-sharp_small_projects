@@ -31,13 +31,16 @@ namespace Assignment_pg101
 
             Console.WriteLine("Qualified?");
             Console.ReadLine();
-            if (numTickets < 3 && DUIanswer == true && currentAge > 15)
+            if (numTickets < 3 && DUIanswer ==true && currentAge > 15)
             {
-                Console.WriteLine("Sorry, we cannot insure you.");
+                Console.WriteLine("Congrats! We can insure you");
+                Console.ReadLine();
+                
             }
            else
             {
-                Console.WriteLine("Congrats! We can insure you");
+                Console.WriteLine("Sorry, we cannot insure you.");
+                Console.ReadLine();
             }
 
         }
