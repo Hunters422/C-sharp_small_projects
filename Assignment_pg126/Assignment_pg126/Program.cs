@@ -23,11 +23,8 @@ namespace Assignment_pg126
             {
                 Console.WriteLine(n);
                 n++;
-            } while (n < 5);
-            Console.ReadLine();
-
-              
-           
+            } while (n < 100);
+            Console.ReadLine();                    
         }
     }
 }
