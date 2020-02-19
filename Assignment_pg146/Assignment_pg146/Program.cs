@@ -10,14 +10,15 @@ namespace Assignment_pg146
     {
         static void Main(string[] args)
         {
-            //string[] strArray = { "Harry ", "Hermoine ", "Ron ", "Hagrid ", "Dumbledore " };
-            //Console.WriteLine("Please enter some text: ");
-            //string userText = Console.ReadLine();
-            //foreach (string s in strArray)
-            //{
-            //    Console.WriteLine(s + userText);
-            //}
-            //Console.ReadLine();
+            string[] strArray = { "Harry ", "Hermoine ", "Ron ", "Hagrid ", "Dumbledore " };
+            Console.WriteLine("Please enter some text: ");
+            string userText = Console.ReadLine();
+            foreach (string s in strArray)
+            {
+                string newString = s + userText;
+                Console.WriteLine(newString);
+            }
+            Console.ReadLine();
 
 
 
@@ -110,13 +111,6 @@ namespace Assignment_pg146
             //        Console.WriteLine("Please COPY EXACTLY FROM THE LIST: ");
             //}
             //Console.ReadLine();
-
-
-
-
-
-
-
 
 
             //part11
