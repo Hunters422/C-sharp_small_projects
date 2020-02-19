@@ -120,18 +120,24 @@ namespace Assignment_pg146
 
             
             //part11
-           List<string> listItems = new List<string>();
-           listItems.Add("Hello");
-           listItems.Add("Hello");
+            List<string> listItems = new List<string>();
+            listItems.Add("Hello");
+            listItems.Add("Hello");
             listItems.Add("Good Bye");
             listItems.Add("Thank you");
             foreach (string listItem in listItems)
             {
                 Console.WriteLine(listItem); 
+                if(listItems.Count != listItems.Distinct().Count())
+                {
+                    Console.WriteLine("This list contains duplicate 'Hello'.");
+                    break; 
+                }
+                else
+                {
+                    Console.WriteLine(listItems);
+                }
             }
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("'Hello' appears more than once in this list.");
             Console.ReadLine();
           
 
