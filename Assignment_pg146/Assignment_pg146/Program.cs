@@ -118,28 +118,36 @@ namespace Assignment_pg146
 
 
 
-            
+
             //part11
             List<string> listItems = new List<string>();
-            listItems.Add("Hello");
-            listItems.Add("Hello");
-            listItems.Add("Good Bye");
-            listItems.Add("Thank you");
-            foreach (string listItem in listItems)
+            listItems.Add("hi");
+            listItems.Add("just");
+            listItems.Add("hi");
+            listItems.Add("hello");
+            listItems.Add("hello");
+            listItems.Add("whats up");
+            listItems.Add("no thank you");
+            listItems.Add("Goodbye");
+            Dictionary<string, int> newDict = new Dictionary<string, int>();
+            List<string> duplicates = new List<string>();
+
+            foreach (string y in listItems)
             {
-                Console.WriteLine(listItem); 
-                if(listItems.Count != listItems.Distinct().Count())
+                Console.WriteLine(y);
+                if (newDict.ContainsKey(y))
                 {
-                    Console.WriteLine("This list contains duplicate 'Hello'.");
-                    break; 
+                    Console.WriteLine("This is a duplicate: " + y);
+
                 }
                 else
                 {
-                    Console.WriteLine(listItems);
+                    newDict.Add(y, 1);
                 }
             }
+
             Console.ReadLine();
-          
+
 
 
         }
