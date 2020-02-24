@@ -10,8 +10,9 @@ namespace Assignment_pg161
     {
         public void addMethod(int x, int y)
         {
-            int result1 = Convert.ToInt32(x + 10);
+            int result = Convert.ToInt32(x + 10);
             Console.WriteLine(y);
+            return;
             
         }
         

@@ -14,8 +14,7 @@ namespace Assignment_pg161
 
             int x = 15;
             int y = 25;
-            int result = a.addMethod(x: x, y: y);
-            Console.WriteLine(result);
+            a.addMethod(x: x, y: y);
             Console.ReadLine();
 
         }
