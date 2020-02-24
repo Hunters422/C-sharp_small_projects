@@ -8,7 +8,7 @@ namespace Assignment_pg160
 {
     class myClass
     {
-        public int addMethod(int x, int y)
+        public int addMethod(int x, int y = 0)
         {
             int result = x + y + 15;
             return result;

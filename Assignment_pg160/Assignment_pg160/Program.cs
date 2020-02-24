@@ -23,20 +23,19 @@ namespace Assignment_pg160
             Console.WriteLine("Please type enter in a number. You can type in a second number if you wish but you may leave it blank.");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("And second number if you choose: ");
-            if (string.IsNullOrEmpty(Console.ReadLine()))
+            string y = Console.ReadLine();
+            if (y == "")
             {
-                int y = Convert.ToInt32(0);
-                int result = a.addMethod(x, y);
-                Console.WriteLine("Your number(s) plus 15 equals " + result);
+                int result = a.addMethod(x);
+                Console.WriteLine(result);
                 Console.ReadLine();
 
-
-            } 
+            }
             else
             {
-                int y = Convert.ToInt32(Console.ReadLine());
-                int result = a.addMethod(x, y);
-                Console.WriteLine("Your number(s) plus 15 equals " + result);
+                int yInt = Convert.ToInt32(y);
+                int result = a.addMethod(x, yInt);
+                Console.WriteLine(result);
                 Console.ReadLine();
 
             }
