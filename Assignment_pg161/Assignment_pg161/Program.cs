@@ -11,9 +11,12 @@ namespace Assignment_pg161
         static void Main(string[] args)
         {
             myClass a = new myClass();
-            int x = 10;
-            int y = 20;
-            int result2 = a.addMethod(x , y);
+
+            int x = 15;
+            int y = 25;
+            int result = a.addMethod(x: x, y: y);
+            Console.WriteLine(result);
+            Console.ReadLine();
 
         }
     }

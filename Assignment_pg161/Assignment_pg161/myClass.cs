@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Assignment_pg161
 {
     class myClass
-    { 
+    {
         public void addMethod(int x, int y)
         {
             int result1 = Convert.ToInt32(x + 10);
