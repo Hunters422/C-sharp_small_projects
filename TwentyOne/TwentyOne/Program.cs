@@ -10,35 +10,36 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            TwentyOneGame game = new TwentyOneGame();
-            game.Players = new List<string> { "Hunter", "Bill", "Sue" };
-            game.ListPlayers();
+            Game game = new TwentyOneGame();
+            Player player = new Player();
+            player.Name = "Hunter";
+            game = game + player;
+
+            Deck deck = new Deck();
+            deck = Shuffle(deck);
+
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+            Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
-        //    Deck deck = new Deck();
-        //    deck = Shuffle(deck);
 
-        //    foreach (Card card in deck.Cards)
-        //    {
-        //        Console.WriteLine(card.Face + " of " + card.Suit);
-        //    }
-        //    Console.WriteLine(deck.Cards.Count);
-        //    Console.ReadLine();
+        }
 
-        //}
+        public static Deck Shuffle(Deck deck)
+        {
+            List<Card> TempList = new List<Card>();
+            Random random = new Random();
 
-        //public static Deck Shuffle(Deck deck)
-        //{
-        //    List<Card> TempList = new List<Card>();
-        //    Random random = new Random();
-
-        //    while (deck.Cards.Count > 0) 
-        //    {
-        //        int randomIndex = random.Next(0, deck.Cards.Count);
-        //        TempList.Add(deck.Cards[randomIndex]);
-        //        deck.Cards.RemoveAt(randomIndex);
-        //    }
-        //    deck.Cards = TempList;
-        //    return deck;
+            while (deck.Cards.Count > 0)
+            {
+                int randomIndex = random.Next(0, deck.Cards.Count);
+                TempList.Add(deck.Cards[randomIndex]);
+                deck.Cards.RemoveAt(randomIndex);
+            }
+            deck.Cards = TempList;
+            return deck;
 
         }
     }
