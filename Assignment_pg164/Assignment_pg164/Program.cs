@@ -20,12 +20,12 @@ namespace Assignment_pg164
             z.outputMethod();
             Output.Addition(out int i);
 
-            Overload y = new Overload();
-            int total1 = y.addMethod(1, 2);
+
+            int total1 = Overload.addMethod(1, 2);
             Console.WriteLine("sum of the two "
                               + "integer value : " + total1);
 
-            int total2 = y.addMethod(1, 2, 3);
+            int total2 = Overload.addMethod(1, 2, 3);
             Console.WriteLine("sum of the three "
                               + "integer value : " + total2);
 

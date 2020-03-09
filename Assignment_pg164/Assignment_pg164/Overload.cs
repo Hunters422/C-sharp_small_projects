@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Assignment_pg164
 {
-    class Overload
+    public static class Overload
     {
-        public int addMethod(int x, int y)
+        public static int addMethod(int x, int y)
         {
             int total = x + y;
             return total;
         }
 
 
-        public int addMethod(int x, int y, int z)
+        public static int addMethod(int x, int y, int z)
         {
             int sum = x + y + z;
             return sum;
